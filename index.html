@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <!-- Basic Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Title & Description (Paling Penting untuk SEO) -->
+    <title>Vatech Corpora | Smart Tech Engineering &amp; IT Solutions</title>
+    <meta name="description" content="Vatech Corpora menyediakan solusi Smart Technology, Engineering, IT Services, Automation, dan IoT. Profesional developer &amp; engineering terbaik di Indonesia.">
+    
+    <!-- Keywords (masih bermanfaat untuk beberapa search engine) -->
+    <meta name="keywords" content="Vatech Corpora, Smart Tech Engineering, IT Solutions, Automation, IoT Indonesia, Developer Engineering, Jasateknisi, Vatech.id">
+    
+    <!-- Author & Robots -->
+    <meta name="author" content="Vatech Corpora">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:title" content="Vatech Corpora | Smart Tech Engineering">
+    <meta property="og:description" content="Solusi teknologi pintar, engineering, dan IT profesional untuk bisnis Anda.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vatech.id"> <!-- Ganti dengan URL asli website kamu -->
+    <meta property="og:image" content="https://cdn.scalev.com/uploads/1784196795/MU2xCVQ01vhSwwnGLDq4cw/1784196788443-logo-png.webp">
+    <meta property="og:locale" content="id_ID">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vatech Corpora | Smart Tech Engineering">
+    <meta name="twitter:description" content="Solusi teknologi pintar, engineering, dan IT profesional.">
+    <meta name="twitter:image" content="https://cdn.scalev.com/uploads/1784196795/MU2xCVQ01vhSwwnGLDq4cw/1784196788443-logo-png.webp">
+    
+    <!-- Favicon & Apple Touch -->
+    <link rel="icon" href="website.ico" type="image/png">
+    <link rel="shortcut icon" href="website.ico" type="image/png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+    <!-- Preconnect Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    
+    <!-- Canonical URL (sangat penting untuk SEO) -->
+    <link rel="canonical" href="https://vatech.id">
+
+<style>
+  :root{
+    --navy:#0F1B33;
+    --navy-soft:#1B2A4A;
+    --ink:#1A2238;
+    --paper:#F5F7FA;
+    --paper-card:#FFFFFF;
+    --line:#DDE3ED;
+    --teal:#0EA5A0;
+    --teal-deep:#0A7A76;
+    --amber:#E8A33D;
+    --muted:#5B6478;
+    --radius:14px;
+    --maxw:1160px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', system-ui, sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:'Space Grotesk', system-ui, sans-serif;
+    color:var(--navy);
+    line-height:1.15;
+    margin:0;
+  }
+  p{margin:0;}
+  a{text-decoration:none;color:inherit;}
+  img{max-width:100%;display:block;}
+  button{font-family:inherit;}
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+
+  /* background texture: subtle circuit grid, tied to "integrated technology" */
+  .bg-grid{
+    position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background-image:
+      linear-gradient(90deg, rgba(15,27,51,0.035) 1px, transparent 1px),
+      linear-gradient(rgba(15,27,51,0.035) 1px, transparent 1px);
+    background-size:56px 56px;
+    mask-image: radial-gradient(ellipse 100% 60% at 50% 0%, black 40%, transparent 85%);
+  }
+
+  /* NAV */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(245,247,250,0.86);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:16px 24px;max-width:var(--maxw);margin:0 auto;
+  }
+  .brand{display:flex;align-items:center;gap:10px;font-family:'Space Grotesk';font-weight:700;font-size:19px;color:var(--navy);}
+  .brand .dot{width:9px;height:9px;border-radius:2px;background:var(--teal);transform:rotate(45deg);}
+  .nav-links{display:none;gap:28px;font-size:14.5px;font-weight:500;color:var(--muted);}
+  .nav-links a:hover{color:var(--navy);}
+  .nav-cta{
+    background:var(--navy);color:#fff;padding:10px 20px;border-radius:8px;
+    font-size:14px;font-weight:600;white-space:nowrap;
+  }
+  @media(min-width:820px){ .nav-links{display:flex;} }
+
+  /* HERO */
+  .hero{padding:64px 0 40px;}
+  .hero-grid{display:grid;grid-template-columns:1fr;gap:40px;align-items:center;}
+  @media(min-width:900px){ .hero-grid{grid-template-columns:1.05fr 0.95fr;gap:24px;} }
+
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:12.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--teal-deep);background:rgba(14,165,160,0.1);
+    padding:7px 14px;border-radius:100px;margin-bottom:20px;
+  }
+  .hero h1{font-size:clamp(32px,5vw,50px);letter-spacing:-0.01em;font-weight:700;}
+  .hero h1 span{color:var(--teal-deep);}
+  .hero-sub{margin-top:18px;font-size:17px;color:var(--muted);max-width:52ch;}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px;}
+  .btn-primary{
+    background:var(--navy);color:#fff;padding:14px 26px;border-radius:9px;
+    font-weight:600;font-size:15px;border:none;cursor:pointer;
+    transition:transform .15s ease, background .15s ease;
+  }
+  .btn-primary:hover{background:var(--navy-soft);transform:translateY(-1px);}
+  .btn-ghost{
+    padding:14px 22px;border-radius:9px;font-weight:600;font-size:15px;
+    border:1.5px solid var(--line);color:var(--navy);background:transparent;
+    cursor:pointer;transition:border-color .15s ease;
+  }
+  .btn-ghost:hover{border-color:var(--teal);}
+  .hero-meta{display:flex;gap:28px;margin-top:38px;flex-wrap:wrap;}
+  .hero-meta div{font-family:'Space Grotesk';font-weight:700;font-size:22px;color:var(--navy);}
+  .hero-meta span{display:block;font-family:'IBM Plex Sans';font-weight:400;font-size:12.5px;color:var(--muted);margin-top:2px;}
+
+  /* SIGNATURE: convergence diagram */
+  .signature{position:relative;}
+  .signature-card{
+    background:var(--paper-card);border:1px solid var(--line);border-radius:20px;
+    padding:22px;box-shadow:0 20px 50px -30px rgba(15,27,51,0.35);
+  }
+  .signature-card img{border-radius:12px;width:100%;height:200px;object-fit:cover;}
+  .conv-caption{font-size:12.5px;color:var(--muted);margin-top:14px;padding-top:14px;border-top:1px solid var(--line);}
+  .conv-caption b{color:var(--navy);}
+
+  svg .node-line{stroke:var(--line);stroke-width:1.6;}
+  svg .node-line-active{stroke:var(--teal);stroke-width:1.8;stroke-dasharray:4 240;stroke-dashoffset:0;animation:flow 3.2s linear infinite;}
+  svg .node-dot{fill:var(--paper-card);stroke:var(--navy);stroke-width:1.6;}
+  svg .node-core{fill:var(--navy);}
+  @keyframes flow{ to{ stroke-dashoffset:-244; } }
+  @media (prefers-reduced-motion: reduce){ svg .node-line-active{animation:none;stroke-dasharray:none;} }
+
+  /* SECTION SHELL */
+  section{padding:76px 0;}
+  .section-head{max-width:640px;margin-bottom:44px;}
+  .kicker{
+    font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--teal-deep);margin-bottom:12px;display:block;
+  }
+  .section-head h2{font-size:clamp(26px,3.4vw,36px);}
+  .section-head p{margin-top:14px;color:var(--muted);font-size:15.5px;}
+
+  /* ABOUT */
+  .about{background:var(--paper-card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .about-grid{display:grid;grid-template-columns:1fr;gap:36px;align-items:center;}
+  @media(min-width:900px){ .about-grid{grid-template-columns:0.9fr 1.1fr;gap:56px;} }
+  .about-img{border-radius:16px;overflow:hidden;border:1px solid var(--line);}
+  .about-img img{height:320px;object-fit:cover;}
+  .about-copy p{color:var(--muted);font-size:15.5px;margin-bottom:16px;}
+  .about-copy p:last-child{margin-bottom:0;}
+  .about-pillars{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:26px;}
+  .pillar{border-left:2px solid var(--teal);padding-left:14px;}
+  .pillar b{font-family:'Space Grotesk';font-size:15px;color:var(--navy);display:block;margin-bottom:3px;}
+  .pillar span{font-size:13.5px;color:var(--muted);}
+
+  /* SERVICES */
+  .services-grid{display:grid;grid-template-columns:1fr;gap:18px;}
+  @media(min-width:700px){ .services-grid{grid-template-columns:1fr 1fr;} }
+  @media(min-width:1040px){ .services-grid{grid-template-columns:repeat(3,1fr);} }
+  .service-card{
+    background:var(--paper-card);border:1px solid var(--line);border-radius:16px;
+    padding:26px 24px;transition:border-color .2s ease, transform .2s ease;
+  }
+  .service-card:hover{border-color:var(--teal);transform:translateY(-3px);}
+  .service-icon{
+    width:44px;height:44px;border-radius:10px;background:var(--navy);
+    display:flex;align-items:center;justify-content:center;margin-bottom:16px;
+  }
+  .service-icon svg{width:22px;height:22px;stroke:var(--teal);fill:none;stroke-width:1.7;}
+  .service-card h3{font-size:17px;margin-bottom:8px;}
+  .service-card p{font-size:14.5px;color:var(--muted);}
+  .service-card.wide{grid-column:span 1;}
+
+  /* WHY / STATS */
+  .why{background:var(--navy);color:#fff;border-radius:24px;}
+  .why .wrap{padding:0 24px;}
+  .why-inner{padding:56px 32px;}
+  .why-grid{display:grid;grid-template-columns:1fr;gap:34px;}
+  @media(min-width:900px){ .why-grid{grid-template-columns:1fr 1fr;gap:48px;align-items:center;} }
+  .why h2{color:#fff;font-size:clamp(24px,3vw,32px);}
+  .why-sub{color:rgba(255,255,255,0.65);margin-top:14px;font-size:15px;max-width:46ch;}
+  .stat-row{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
+  .stat{border-top:1px solid rgba(255,255,255,0.16);padding-top:16px;}
+  .stat b{font-family:'Space Grotesk';font-size:30px;color:var(--amber);display:block;}
+  .stat span{font-size:13px;color:rgba(255,255,255,0.6);}
+
+  /* PROCESS / APPROACH (not numbered — grouped by phase name, order matters here so light sequencing ok) */
+  .approach-list{display:grid;grid-template-columns:1fr;gap:0;border-top:1px solid var(--line);}
+  .approach-item{
+    display:grid;grid-template-columns:1fr;gap:8px;padding:26px 0;border-bottom:1px solid var(--line);
+  }
+  @media(min-width:760px){ .approach-item{grid-template-columns:220px 1fr;gap:32px;align-items:start;} }
+  .approach-phase{font-family:'Space Grotesk';font-weight:600;color:var(--navy);font-size:16px;}
+  .approach-item p{color:var(--muted);font-size:15px;}
+
+  /* TESTIMONIAL */
+  .quote-card{
+    background:var(--paper-card);border:1px solid var(--line);border-radius:18px;
+    padding:36px;position:relative;
+  }
+  .quote-mark{font-family:'Space Grotesk';font-size:52px;color:var(--teal);line-height:1;opacity:.5;margin-bottom:6px;}
+  .quote-text{font-size:19px;color:var(--navy);font-weight:500;line-height:1.5;max-width:60ch;}
+  .quote-attr{margin-top:20px;font-size:14px;color:var(--muted);}
+  .quote-attr b{color:var(--navy);}
+
+  /* FAQ */
+  .faq-item{border-bottom:1px solid var(--line);}
+  .faq-q{
+    width:100%;text-align:left;background:none;border:none;padding:20px 0;
+    display:flex;justify-content:space-between;align-items:center;gap:16px;
+    font-family:'Space Grotesk';font-weight:600;font-size:16px;color:var(--navy);cursor:pointer;
+  }
+  .faq-q .plus{
+    flex-shrink:0;width:22px;height:22px;position:relative;
+  }
+  .faq-q .plus::before,.faq-q .plus::after{
+    content:'';position:absolute;background:var(--navy);transition:transform .2s ease;
+  }
+  .faq-q .plus::before{left:0;top:10px;width:22px;height:2px;}
+  .faq-q .plus::after{left:10px;top:0;width:2px;height:22px;}
+  .faq-item.open .plus::after{transform:rotate(90deg);}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease;}
+  .faq-a p{padding-bottom:20px;color:var(--muted);font-size:15px;max-width:70ch;}
+
+  /* FINAL CTA */
+  .final-cta{
+    background:linear-gradient(135deg, var(--navy) 0%, var(--navy-soft) 100%);
+    border-radius:24px;padding:52px 32px;text-align:center;color:#fff;
+  }
+  .final-cta h2{color:#fff;font-size:clamp(24px,3.6vw,34px);}
+  .final-cta p{color:rgba(255,255,255,0.7);margin-top:12px;font-size:15.5px;}
+  .final-cta .hero-actions{justify-content:center;margin-top:26px;}
+  .final-cta .btn-primary{background:var(--amber);color:var(--navy);}
+  .final-cta .btn-primary:hover{background:#f0b256;}
+  .final-cta .btn-ghost{border-color:rgba(255,255,255,0.3);color:#fff;}
+  .final-cta .btn-ghost:hover{border-color:#fff;}
+
+  footer{border-top:1px solid var(--line);padding:36px 0;}
+  .footer-inner{display:flex;flex-direction:column;gap:16px;font-size:13.5px;color:var(--muted);}
+  @media(min-width:700px){ .footer-inner{flex-direction:row;justify-content:space-between;align-items:center;} }
+  .footer-brand{font-family:'Space Grotesk';font-weight:700;color:var(--navy);}
+
+  :focus-visible{outline:2.5px solid var(--teal-deep);outline-offset:2px;}
+  
+  .brand {
+  display: flex;
+  align-items: center;
+	}
+
+	.logo-img {
+	  height: 50px;           /* sesuaikan ukuran sesuai kebutuhan */
+	  width: auto;
+	  max-width: 220px;
+	}
+
+	.nav {
+	  display: flex;
+	  align-items: center;
+	  justify-content: space-between;
+	  padding: 1rem 5%;
+	  background: rgba(245,247,250,0.86); /* atau warna tema kamu */
+	}
+	
+	.service-card-link {
+	  text-decoration: none;
+	  color: inherit;
+	  display: block;
+	}
+
+	.service-card-link:hover {
+	  transform: translateY(-8px);
+	  transition: transform 0.3s ease;
+	}
+
+	.service-card-link:hover .service-card {
+	  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+	}
+</style>
+</head>
+<body>
+<div class="bg-grid" aria-hidden="true"></div>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="#top">
+      <img src="https://cdn.scalev.com/uploads/1784196795/MU2xCVQ01vhSwwnGLDq4cw/1784196788443-logo-png.webp" 
+           alt="Vatech Corpora" 
+           class="logo-img">
+    </a>
+    <nav class="nav-links">
+      <a href="#tentang">Tentang Kami</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#pendekatan">Pendekatan</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="nav-cta" href="#layanan">Lihat Layanan</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow">Integrated Technology Corporation</span>
+          <h1>Solusi Teknologi <span>Terintegrasi</span> untuk yang Bergerak Cepat</h1>
+          <p class="hero-sub">Vatech Corpora menyatukan pengembangan perangkat lunak, desain digital, dan rekayasa elektro dalam satu payung kerja, supaya sistem yang Anda bangun benar-benar saling terhubung, bukan sekadar berdampingan.</p>
+          <div class="hero-actions">
+            <button class="btn-primary" id="cta-scroll">Jelajahi Layanan Kami</button>
+            <a class="btn-ghost" href="#tentang">Kenali Vatech</a>
+          </div>
+          <div class="hero-meta">
+            <div>5<span>Divisi Rekayasa</span></div>
+            <div>1<span>Tim Terintegrasi</span></div>
+            <div>360°<span>Cakupan Solusi</span></div>
+          </div>
+        </div>
+
+        <div class="signature">
+          <div class="signature-card">
+            <img id="hero-img" alt="Tim teknologi Vatech Corpora sedang bekerja" src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=80" />
+            <svg viewBox="0 0 400 170" width="100%" style="margin-top:16px;" role="img" aria-label="Diagram lima divisi Vatech menyatu ke satu inti">
+              <line class="node-line" x1="200" y1="85" x2="40" y2="20"/>
+              <line class="node-line" x1="200" y1="85" x2="120" y2="150"/>
+              <line class="node-line" x1="200" y1="85" x2="280" y2="150"/>
+              <line class="node-line" x1="200" y1="85" x2="360" y2="20"/>
+              <line class="node-line" x1="200" y1="85" x2="200" y2="15"/>
+              <line class="node-line node-line-active" x1="200" y1="85" x2="40" y2="20"/>
+              <line class="node-line node-line-active" x1="200" y1="85" x2="120" y2="150"/>
+              <line class="node-line node-line-active" x1="200" y1="85" x2="280" y2="150"/>
+              <line class="node-line node-line-active" x1="200" y1="85" x2="360" y2="20"/>
+              <line class="node-line node-line-active" x1="200" y1="85" x2="200" y2="15"/>
+              <circle class="node-core" cx="200" cy="85" r="10"/>
+              <circle class="node-dot" cx="40" cy="20" r="6.5"/>
+              <circle class="node-dot" cx="120" cy="150" r="6.5"/>
+              <circle class="node-dot" cx="280" cy="150" r="6.5"/>
+              <circle class="node-dot" cx="360" cy="20" r="6.5"/>
+              <circle class="node-dot" cx="200" cy="15" r="6.5"/>
+            </svg>
+            <div class="conv-caption"><b>Satu inti, lima disiplin.</b> Software, Desain, Electrical, IoT, dan Smart Tech bekerja dari satu arsitektur yang sama.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="tentang">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-img">
+          <img alt="Kantor dan fasilitas rekayasa Vatech Corpora" src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" />
+        </div>
+        <div class="about-copy">
+          <span class="kicker">Tentang Kami</span>
+          <h2 style="margin-bottom:16px;">Korporasi teknologi yang bekerja lintas disiplin, dalam satu tim.</h2>
+          <p>Vatech Corpora dibangun dengan satu keyakinan: teknologi yang baik jarang lahir dari satu bidang keahlian saja. Sebuah sistem yang solid butuh perangkat lunak yang rapi, antarmuka yang dipikirkan matang, kelistrikan yang aman, dan konektivitas yang bisa diandalkan sekaligus.</p>
+          <p>Karena itu kami menyusun tim kami sebagai satu korporasi rekayasa terintegrasi, bukan kumpulan vendor yang bekerja terpisah. Setiap proyek melewati proses yang sama, standar yang sama, dan satu titik koordinasi yang sama.</p>
+          <div class="about-pillars">
+            <div class="pillar"><b>Terintegrasi</b><span>Lima disiplin dalam satu alur kerja.</span></div>
+            <div class="pillar"><b>Terukur</b><span>Setiap sistem didokumentasikan dan diuji.</span></div>
+            <div class="pillar"><b>Berkelanjutan</b><span>Dukungan pasca-implementasi yang konsisten.</span></div>
+            <div class="pillar"><b>Adaptif</b><span>Solusi disesuaikan dengan skala bisnis Anda.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="layanan">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Layanan Profesional</span>
+        <h2>Lima disiplin rekayasa, satu koordinasi.</h2>
+        <p>Setiap divisi berdiri dengan keahlian teknisnya sendiri, dan dirancang untuk saling terhubung ketika sebuah proyek membutuhkan lebih dari satu bidang.</p>
+      </div>
+
+      <div class="services-grid">
+        <a href="https://vatech.id/" class="service-card-link">
+		  <div class="service-card">
+			<div class="service-icon">
+			  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+				<polyline points="8 6 2 12 8 18"></polyline>
+				<polyline points="16 6 22 12 16 18"></polyline>
+			  </svg>
+			</div>
+			<h3>Software Developer</h3>
+			<p>Pengembangan aplikasi web, mobile, dan sistem internal dengan arsitektur yang rapi dan mudah dikembangkan jangka panjang.</p>
+		  </div>
+		</a>
+        <a href="https://vatech.id/" class="service-card-link">
+		  <div class="service-card">
+			<div class="service-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div>
+			<h3>Digital Desain</h3>
+			<p>Perancangan identitas visual, antarmuka produk, dan aset digital yang konsisten dengan karakter brand Anda.</p>
+		  </div>
+		</a>
+
+		<a href="https://vatech.id/" class="service-card-link">
+		  <div class="service-card">
+			<div class="service-icon"><svg viewBox="0 0 24 24"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
+			<h3>Electric Engineering</h3>
+			<p>Perancangan dan instalasi sistem kelistrikan untuk fasilitas industri, komersial, maupun otomasi.</p>
+		  </div>
+		</a>
+
+		<a href="https://vatech.id/" class="service-card-link">
+		  <div class="service-card">
+			<div class="service-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v4"/><path d="M12 18v4"/><path d="M4.9 4.9l2.8 2.8"/><path d="M16.3 16.3l2.8 2.8"/><path d="M2 12h4"/><path d="M18 12h4"/></svg></div>
+			<h3>IoT</h3>
+			<p>Integrasi perangkat dan sensor ke satu sistem pemantauan, dari lini produksi hingga bangunan pintar.</p>
+		  </div>
+		</a>
+
+		<a href="https://vatech.id/" class="service-card-link">
+		  <div class="service-card">
+			<div class="service-icon"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h1v1H9z"/><path d="M14 9h1v1h-1z"/><path d="M9 14h6"/></svg></div>
+			<h3>Smart Tech</h3>
+			<p>Otomasi dan sistem cerdas yang menghubungkan perangkat keras, data, dan pengambilan keputusan secara real-time.</p>
+		  </div>
+		</a>
+
+		<a href="https://vatech.id/" class="service-card-link">
+		  <div class="service-card">
+			<div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 2l9 4.5v9L12 20l-9-4.5v-9L12 2z"/><path d="M12 12v8"/><path d="M12 12l9-4.5"/><path d="M12 12L3 7.5"/></svg></div>
+			<h3>Koordinasi Lintas Divisi</h3>
+			<p>Untuk proyek yang menyatukan lebih dari satu disiplin, satu tim inti mengoordinasikan seluruh divisi terkait.</p>
+		  </div>
+		</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY / STATS -->
+  <section>
+    <div class="wrap">
+      <div class="why">
+        <div class="why-inner">
+          <div class="why-grid">
+            <div>
+              <span class="kicker" style="color:var(--amber);">Kenapa Vatech Corpora</span>
+              <h2>Satu tim yang memahami keseluruhan sistem, bukan hanya satu bagiannya.</h2>
+              <p class="why-sub">Ketika perangkat lunak, desain, kelistrikan, dan konektivitas ditangani sebagai satu sistem, hasil akhirnya lebih stabil dan lebih mudah dikembangkan ke depan.</p>
+            </div>
+            <div class="stat-row">
+              <div class="stat"><b>5</b><span>Divisi rekayasa terintegrasi</span></div>
+              <div class="stat"><b>1</b><span>Titik koordinasi proyek</span></div>
+              <div class="stat"><b>360°</b><span>Cakupan dari desain hingga instalasi</span></div>
+              <div class="stat"><b>100%</b><span>Dokumentasi teknis tiap proyek</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section id="pendekatan">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Cara Kami Bekerja</span>
+        <h2>Pendekatan yang sama untuk setiap proyek.</h2>
+      </div>
+      <div class="approach-list">
+        <div class="approach-item">
+          <span class="approach-phase">Kaji Kebutuhan</span>
+          <p>Kami memetakan sistem yang sudah ada dan mengidentifikasi divisi mana yang perlu terlibat sejak awal.</p>
+        </div>
+        <div class="approach-item">
+          <span class="approach-phase">Rancang Arsitektur</span>
+          <p>Perangkat lunak, desain, dan kebutuhan kelistrikan dirancang sebagai satu kesatuan, bukan berurutan terpisah.</p>
+        </div>
+        <div class="approach-item">
+          <span class="approach-phase">Bangun & Uji</span>
+          <p>Setiap komponen dibangun dengan standar dokumentasi yang sama, lalu diuji sebagai satu sistem utuh.</p>
+        </div>
+        <div class="approach-item">
+          <span class="approach-phase">Dukungan Lanjutan</span>
+          <p>Tim yang sama yang membangun sistem, tetap menjadi titik kontak untuk pengembangan dan pemeliharaan berikutnya.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section>
+    <div class="wrap">
+      <div class="quote-card">
+        <span class="quote-mark" aria-hidden="true">"</span>
+        <p class="quote-text">Yang paling terasa adalah tidak perlu menjelaskan ulang kebutuhan ke tim yang berbeda-beda, satu tim Vatech sudah memahami keseluruhan sistem kami.</p>
+        <p class="quote-attr"><b>Kepala Operasional</b> · Perusahaan Manufaktur Menengah</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Pertanyaan Umum</span>
+        <h2>Yang sering ditanyakan.</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Apakah Vatech Corpora bisa menangani proyek yang hanya butuh satu divisi saja?<span class="plus" aria-hidden="true"></span></button>
+          <div class="faq-a"><p>Bisa. Setiap divisi, Software Developer, Digital Desain, Electric Engineering, IoT, maupun Smart Tech juga melayani proyek yang berdiri sendiri tanpa perlu melibatkan divisi lain.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Bagaimana proses koordinasi jika proyek melibatkan lebih dari satu divisi?<span class="plus" aria-hidden="true"></span></button>
+          <div class="faq-a"><p>Satu tim inti bertindak sebagai titik koordinasi tunggal, sehingga Anda tidak perlu berkomunikasi terpisah dengan setiap divisi yang terlibat.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Apakah tersedia dukungan setelah sistem selesai dibangun?<span class="plus" aria-hidden="true"></span></button>
+          <div class="faq-a"><p>Ya. Tim yang membangun sistem Anda tetap menjadi titik kontak untuk pemeliharaan dan pengembangan lanjutan.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Bagaimana cara memulai diskusi dengan Vatech Corpora?<span class="plus" aria-hidden="true"></span></button>
+          <div class="faq-a"><p>Anda bisa menjelajahi ringkasan layanan di halaman ini terlebih dahulu untuk melihat divisi mana yang paling relevan dengan kebutuhan Anda.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section>
+    <div class="wrap">
+      <div class="final-cta">
+        <h2>Satu korporasi, lima disiplin, satu tujuan.</h2>
+        <p>Jelajahi kembali layanan kami untuk melihat divisi mana yang paling sesuai dengan kebutuhan sistem Anda.</p>
+        <div class="hero-actions">
+          <button class="btn-primary" id="cta-scroll-2">Lihat Layanan Kami</button>
+          <a class="btn-ghost" href="#top">Kembali ke Atas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <span class="footer-brand">&copy; 2026 Vatech Corpora</span>
+    <span>Solusi Teknologi Terintegrasi | Software, Desain, Electrical, IoT &amp; Smart Tech.</span>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    // Defensive Scalev integration — page-safe methods only.
+    function getScalevData(){
+      try{
+        if (window.Scalev && typeof window.Scalev.data?.get === 'function'){
+          return window.Scalev.data.get();
+        }
+      }catch(e){ /* fall through to static fallback */ }
+      return { page: {}, store: null };
+    }
+    var scalevData = getScalevData();
+    var page = scalevData.page || {};
+
+    function trackEvent(eventName, payload){
+      try{
+        if (window.Scalev && typeof window.Scalev.analytics?.track === 'function'){
+          window.Scalev.analytics.track('facebook', Object.assign({ event: eventName }, payload || {}));
+          window.Scalev.analytics.track('tiktok', Object.assign({ event: eventName }, payload || {}));
+        }
+      }catch(e){ /* analytics should never break the page */ }
+    }
+
+    document.addEventListener('DOMContentLoaded', function(){
+      trackEvent('PageView', { page: page.username || 'vatech-corpora' });
+    });
+
+    // Scroll CTA buttons
+    ['cta-scroll','cta-scroll-2'].forEach(function(id){
+      var el = document.getElementById(id);
+      if(!el) return;
+      el.addEventListener('click', function(){
+        var target = document.getElementById('layanan');
+        if(target) target.scrollIntoView({ behavior:'smooth', block:'start' });
+        trackEvent('Lead', { action: 'scroll_to_services' });
+      });
+    });
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-item').forEach(function(item){
+      var q = item.querySelector('.faq-q');
+      var a = item.querySelector('.faq-a');
+      q.addEventListener('click', function(){
+        var isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(function(openItem){
+          if(openItem !== item){
+            openItem.classList.remove('open');
+            openItem.querySelector('.faq-q').setAttribute('aria-expanded','false');
+            openItem.querySelector('.faq-a').style.maxHeight = null;
+          }
+        });
+        if(isOpen){
+          item.classList.remove('open');
+          q.setAttribute('aria-expanded','false');
+          a.style.maxHeight = null;
+        } else {
+          item.classList.add('open');
+          q.setAttribute('aria-expanded','true');
+          a.style.maxHeight = a.scrollHeight + 'px';
+        }
+      });
+    });
+  })();
+</script>
+</body>
+</html>
